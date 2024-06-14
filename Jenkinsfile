@@ -12,5 +12,10 @@ pipeline {
                 sh "sh setup.sh"
             }
         }
+        stage('Script Execution step') {
+            steps {
+                sh "sh mainscript.sh"
+            }
+        }
     }
 }
