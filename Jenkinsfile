@@ -6,16 +6,6 @@ pipeline {
                 sh "sh cleanup.sh"
             }
         }
-        stage ('build Docker Image') {
-            steps {
-                sh "sh builddockerimage.sh"
-            }
-        }
-        stage ('Modify Image') {
-            steps {
-                sh "sh modifyapp.sh"
-            }
-        }
         stage('Run Docker step') {
             steps {
                 sh "sh setup.sh"
