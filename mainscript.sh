@@ -1,4 +1,5 @@
 # Main script execution
+#!/bin/bash
 echo "Starting build process..."
 sleep 3
 cleanup
