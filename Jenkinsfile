@@ -1,9 +1,23 @@
 pipeline { 
     agent any
+    environment {
+        DOCKER_IMAGE="lbg"
+        PORT=5001  
+    }
     stages {
         stage ('clean up') {
             steps {
                 sh "sh cleanup.sh"
+            }
+        }
+        stage ('Build Image') {
+            steps {
+                sh "sh builddockerimage.sh"
+            }
+        }
+        stage ('Modify Image') {
+            steps {
+                sh "sh modifyapp.sh"
             }
         }
         stage('Run Docker step') {
