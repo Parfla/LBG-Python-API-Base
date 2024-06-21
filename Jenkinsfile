@@ -3,7 +3,7 @@ pipeline {
     environment {
         GCR_CREDENTIALS_ID = 'lee-w3-sprint-secretfile' // The ID you provided in Jenkins credentials
         IMAGE_NAME = 'lee-build-1'
-        BUILD_NUMBER = '2'
+        BUILD_NUMBER = '3'
         GCR_URL = 'gcr.io/lbg-mea-build-c19'
         PROJECT_ID = 'lbg-mea-build-c19'
         CLUSTER_NAME = 'demo-cluster'
