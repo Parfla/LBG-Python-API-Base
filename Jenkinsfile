@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         GCR_CREDENTIALS_ID = 'lee-w3-sprint-secretfile' // The ID you provided in Jenkins credentials
-        IMAGE_NAME = 'lee-build-1'
+        IMAGE_NAME = 'lee-build-2'
         BUILD_NUMBER = '2'
         GCR_URL = 'gcr.io/lbg-mea-build-c19'
         PROJECT_ID = 'lbg-mea-build-c19'
